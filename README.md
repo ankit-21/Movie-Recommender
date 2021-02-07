@@ -14,5 +14,12 @@ This technique uses matrix factorization at its core for generating recommendati
 ### Alternating Least Squares
 Alternating Least Squares (ALS) machine learning tool in Spark’s ML library was used in order to perform collaborative filtering for this dataset. The main feature that enables the ALS algorithm to handle large-scale data is its parallelization. Like conventional machine learning models, ALS also minimizes the loss function by performing gradient descent. The unique thing in ALS performing gradient descent is that it runs it in parallel across different batches of the training data from different clusters of machines. This allows it to process large amounts of data relatively easily. Item-based filtering was performed over user-based filtering as the nature of users is usually unpredictable and dynamic with time, while items’ characteristics don’t change over a period of time. 
 
+## Tableau Visualizations
+### Demographic Filtering
+https://public.tableau.com/profile/vindhya.rudrappa#!/vizhome/DemographicFiltering/Dashboard1
+
+### Content Filtering
+https://public.tableau.com/profile/ronald6572#!/vizhome/ContentBasedFiltering_16067848201130/Dashboard1
+
 ## Reference
 https://www.kaggle.com/ibtesama/getting-started-with-a-movie-recommendation-system
