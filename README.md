@@ -1,6 +1,6 @@
 # Movie-Recommender
 ## A Movie Recommender System using multiple algorithms
-### We built a recommender system for users to recommend movies using 3 methods: based on user ratings (demographic filtering), based on similarity of movie description (content-based filtering) and based on ratings provided by user for different movies (collaborative filtering). Apache Spark was used to process the large dataset.
+### We built a recommender system for users to recommend movies using 3 methods: based on user ratings (demographic filtering), based on similarity of movie description (content-based filtering) and based on users' preferences for different movies (collaborative filtering). Apache Spark was used to process the large dataset.
 
 ## Demographic Filtering
 This recommendation engine type essentially considers user’s demographics into account in order to make recommendations. For each of the movies in the dataset, the 90th percentile of ‘vote count’ (c) is calculated. Movies with vote count more than 'c' are the candidates for the movie recommendation engine. A score is calculated for the candidate movies based on the formula provided by the IMDb website: score = v/((v+m)).R +m/((m+v)).C
